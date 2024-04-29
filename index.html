@@ -1,22 +1,17 @@
 <script>
 let idade = prompt ("insira sua idade")
-let convite = prompt ("você foi convidado, 'sim' 'não'")
+let convite = prompt ("você foi convidado a festa")
 
-if (idade < 18){
-    document.write("sim")
+
+if (idade >=18 && convite == "sim"){
     alert("acesso concedido")
-}else if (idade > 18){
-    document.write("não")
-    alert("desculpe, você não pode acessae essa festa")
-}else{
-    alert("acesso concedido"); ("desculpe, você não pode acessar essa festa")
+}else if (idade <18 && convite == "não"){
+    alert("desculpe, você não pode acessar a festa")
+}else if (idade <18 && convite == "sim"){
+    alert("desculpa, você não pode acessar a festa")
+}else if (idade >=18 && convite == "não"){
+    alert("desculpa, você não pode acessar a festa")
 }
-
-
-
-
-
-
 
 
 
